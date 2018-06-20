@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ví dụ đầu tiên Vue.js - allaravel.com</title>
+    <base href="{{asset('')}}">
+</head>
+
+<body>
+    <div id="app">
+        <h1 v-html="message"></h1>
+        <h1>{{ message }}</h1>
+        <input v-model="message">
+    </div>
+    <!-- <script src="https://vuejs.org/js/vue.min.js"></script> -->
+    <script src="../assets/vue/vue.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Xin chào, tôi là <span style="color: #41B883;">Vue</span>.<span style="color: #354B5E;">js</span>'
+            }
+        })
+    </script>
+</body>
+
+</html>

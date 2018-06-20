@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ví dụ về v-if - Allaravel.com</title>
+</head>
+
+<body>
+    <!-- v-if -->
+    <!-- <div id="app">
+        <h1 v-if="user.gender == 1 && user.name != null" style="color: red;">Hi Mr {{ user.name }}</h1>
+        <h1 v-else-if="user.gender == 2 && user.name != null" style="color: green">Hi Mrs {{ user.name }}</h1>
+        <h1 v-else style="color: blue">v-if & v-show</h1>
+        <br>
+        <label> Full name</label>
+        <input v-model="user.name" placeholder="First Name">
+        <br>
+        <label>Gender</label>
+        <select v-model="user.gender">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </select>
+    </div>
+    <script src="../assets/vue/vue.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                user: {}
+            }
+        })
+    </script> -->
+
+    <!-- v-show -->
+    <div id="app">
+            <h1 v-show="user.gender == 1 && user.name != null" style="color: red;">Chào anh {{ user.name }}</h1>
+            <h1 v-show="user.gender == 2 && user.name != null" style="color: green">Chào chị {{ user.name }}</h1>
+            <h1 v-show="user.name == null" style="color: blue">Ví dụ về v-show</h1>
+            <br>
+            <label>Họ và tên</label>
+            <input v-model="user.name" placeholder="Nhập vào tên bạn">
+            <br>
+            <label>Giới tính</label>
+            <select v-model="user.gender">
+                <option value="1">Nam</option>
+                <option value="2">Nữ</option>
+            </select>
+        </div>
+        <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+        <script type="text/javascript">
+            new Vue({
+                el: '#app',
+                data: {
+                    user: {}
+                }
+            })
+        </script>
+</body>
+
+</html>

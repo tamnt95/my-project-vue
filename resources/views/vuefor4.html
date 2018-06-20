@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Duyệt thuộc tính đối tượng với v-for Vuejs - Allaravel.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-success">Chi tiet thong tin nguoi dung</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" v-for="(value, key, index) in user">
+                {{ index }}. {{ key }}: {{ value}}
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                user: {
+                    name: 'Nguyen Thanh Tam',
+                    email: 'tam.nguyen@manifera.com',
+                    phone: '0949930602',
+                    joinedDate: '06/06/2018',
+                    location: 'Ho Chi Minh'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

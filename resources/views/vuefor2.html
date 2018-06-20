@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xử lý mảng giá trị với v-for Vuejs - Allaravel.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="app" class="container">        
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-success">Danh sách các bài viết</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" v-for="(title, index) in postTitles">
+                
+            <!-- Cach 1 -->
+            <!-- <div class="col-md-12" v-for="(title, index) in postTitles"> -->
+                <!-- <h4>{{ title }}</h4> -->
+               
+                <!-- Cach 2 dep hon cai tren -->
+                <h4>{{ index + 1}}. {{ title }}</h4> 
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                postTitles: [
+                    'Giới thiệu framework Vue.js',
+                    'Cài đặt môi trường Vue.js',
+                    'Các công cụ sử dụng trong phát triển Vue.js'
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
