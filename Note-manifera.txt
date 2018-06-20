@@ -1,0 +1,18 @@
+work.manifera id: tam.nguyen // 0949930602
+Import SQL bang comandline : mysql -u root -p -h 127.0.0.1 tendatabase < database.sql
+Mở cửa sổ terminal thứ 2: ctrl + shift + T (anh Vũ bày)
+Search Command đã dùng: Ctrl + R (anh Vũ bày)
+
+try catch (chổ DB để khỏi bị lổi ở TestInsert COntroller )
+làm command cho phần migrate
+
+- Tạo bảng phụ
+- move dữ liệu
+- drop catory_id ở article
+- down : Tạo lại cột category_id ở article
+- move dữ liệu từ bảng trung gian về bảng article 
+- drop bảng phụ (bang rollback)
+
+// Javascript to automatically close a popup window (Anh Vũ hướng dẫn)
+
+Sử dụng hàm setTimeout: setTimeout(() => this.$emit('closed'), 1500);
